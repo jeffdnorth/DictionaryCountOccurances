@@ -66,7 +66,11 @@ namespace DictionaryCountOccurances
             {
                 dictionary[i] = dictionary[i] + 1;
             }
-
+            //to print dictionary
+            foreach(var key in dictionary.Keys)
+            {
+                Console.WriteLine($"The digit {key} occurs {dictionary[key]} times");
+            }
         }
     }
 }
